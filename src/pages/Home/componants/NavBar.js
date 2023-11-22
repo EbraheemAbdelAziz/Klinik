@@ -38,19 +38,22 @@ const NavBar = () => {
                                 <Link to={"/departments?id=1"}>Dentistry</Link>
                               </li>
                               <li>
-                                <a href="blog_details.html">Cardiology</a>
+                                <Link to={"/departments?id=2"}>Cardiology</Link>
                               </li>
                               <li>
-                                <a href="elements.html">ENT Spitialists</a>
+                                <Link to={"/departments?id=3"}>
+                                  ENT Spitialists
+                                </Link>
                               </li>
                               <li>
-                                <a href="elements.html">Astrology</a>
+                                <Link to={"/departments?id=4"}>
+                                  Neuroanatomy
+                                </Link>
                               </li>
                               <li>
-                                <a href="elements.html">Neuroanatomy</a>
-                              </li>
-                              <li>
-                                <a href="elements.html">Blood Screening</a>
+                                <Link to={"/departments?id=5"}>
+                                  Blood Screening
+                                </Link>
                               </li>
                             </ul>
                           </li>
