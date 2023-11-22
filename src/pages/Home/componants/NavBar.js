@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../../img/logo/logo.png"
 const NavBar = () => {
   return (
@@ -37,7 +38,7 @@ const NavBar = () => {
                                     </nav>
                                 </div>
                                 <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                    <a href="index.html" class="btn header-btn">Log out</a>
+                                    <Link to="/login" class="btn header-btn">Sign In</Link>
                                 </div>
                             </div>
                         </div>
