@@ -8,7 +8,6 @@ export const DepartmentPage = (props)=> {
     const [Data , setDate] = useState({
         id:0,
         name : "",
-        info: "",
         img: Image,
     })
 
@@ -19,17 +18,17 @@ export const DepartmentPage = (props)=> {
             }
         })
         
-    }, [id]);
+    }, [id,Data]);
     return(
         <>
             <main>
-                <div class="slider-area2" style={{backgroundImage : "url("+ Data.img +")"}}>
+                <div class="slider-area2" style={{backgroundImage : "url("+ Data.img +")",backgroundPosition:"center"}}>
                     <div class="slider-height2 d-flex align-items-center">
                         <div class="container">
                             <div class="row">
                             <div class="col-xl-12">
                                 <div class="hero-cap hero-cap2 text-center">
-                                    <h2>{Data.name}</h2>
+                                    <h2 style={{color:"blue"}}>{Data.name}</h2>
                                 </div>
                             </div>
                             </div>
