@@ -1,7 +1,8 @@
 import About from "./componants/About";
+import { Departmint } from "./componants/Departmint";
+import { Gallery } from "./componants/Gallery";
 import HeroSection from "./componants/HeroSection";
 import Main from "./componants/Main";
-import NavBar from "./componants/NavBar";
 
 const HomePaage = () =>{
     return (
@@ -9,6 +10,8 @@ const HomePaage = () =>{
         <Main>
           <HeroSection />
           <About />
+          <Departmint />
+          <Gallery />
         </Main>
       </>
     );

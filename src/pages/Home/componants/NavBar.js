@@ -24,9 +24,12 @@ const NavBar = () => {
                                             <li><a href="doctor.html">Doctors</a></li>
                                             <li><a href="department.html">Department</a>
                                             <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
+                                                    <li><a href="blog.html">Dentistry</a></li>
+                                                    <li><a href="blog_details.html">Cardiology</a></li>
+                                                    <li><a href="elements.html">ENT Spitialists</a></li>
+                                                    <li><a href="elements.html">Astrology</a></li>
+                                                    <li><a href="elements.html">Neuroanatomy</a></li>
+                                                    <li><a href="elements.html">Blood Screening</a></li>
                                                 </ul></li>
                                             <li><a href="blog.html">Testimonials</a></li>
                                             <li><a href="contact.html">Contact</a></li>
