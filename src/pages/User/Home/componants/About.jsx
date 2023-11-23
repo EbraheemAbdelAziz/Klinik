@@ -1,5 +1,5 @@
-import img1 from "../../../img/gallery/about2.png"
-import img2 from "../../../img/gallery/about1.png"
+import img1 from "../../../../img/gallery/about2.png"
+import img2 from "../../../../img/gallery/about1.png"
 const About= ()=>{
  return (
     <>

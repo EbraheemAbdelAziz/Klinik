@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Register/Register.css';
-import RegisterPhoto from '../../../../img/imgR1.jpg'
+import './Register.css';
+import RegisterPhoto from '../../img/imgR1.jpg'
 import { Link } from 'react-router-dom';
 export default function Register() {
   return (
@@ -18,7 +18,7 @@ export default function Register() {
                         <input className='inputRegister' type="password" placeholder="Enter Email"/><br/>
                         <input className='inputRegister' type="password" placeholder="Enter Strong Password"/>
                     </div>
-                    <button class="btnregister text-center"><a href="#">Sign Up</a></button>
+                    <button class="btnregister text-center"><Link>Sign Up</Link></button>
                     <p class="text-center forgetText">Already have an account ?  <Link  to="/login">Sign In </Link></p>
                 </div>
 

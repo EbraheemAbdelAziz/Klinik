@@ -1,5 +1,5 @@
-import { Link, Navigate } from "react-router-dom";
-import logo from "../../../img/logo/logo.png";
+import { Link } from "react-router-dom";
+import logo from "../../../../img/logo/logo.png";
 const NavBar = () => {
   return (
     <>
@@ -23,16 +23,16 @@ const NavBar = () => {
                       <nav>
                         <ul id="navigation">
                           <li>
-                            <a href="index.html">Home</a>
+                            <Link to={"/home"}>Home</Link>
                           </li>
                           <li>
-                            <a href="about.html">About</a>
+                            <Link to={"/about"}>About</Link>
                           </li>
                           <li>
-                            <a href="doctor.html">Doctors</a>
+                            <Link to={"/doctors"}> Doctors </Link>
                           </li>
                           <li>
-                            <a href="department.html">Department</a>
+                            <Link>Departments</Link>
                             <ul class="submenu">
                               <li>
                                 <Link to={"/departments?id=1"}>Dentistry</Link>

@@ -1,7 +1,7 @@
 
 import React from 'react';
-import '../Login/Login.css'
-import loginPhoto from '../../../../img/logIn.jpg'
+import './Login.css'
+import loginPhoto from '../../img/logIn.jpg'
 import { Link } from 'react-router-dom';
 export default function Login() {
   return (
@@ -18,8 +18,8 @@ export default function Login() {
                         <input className='inputLogin1' type="name" placeholder="User Name"/><br/>
                         <input className='inputLogin2' type="password" placeholder="Password"/>
                     </div>
-                    <button class="btnlogin text-center"><a href="#">Sign In</a></button>
-                    <p class="text-center forgetText">Forget Password ?  <a  href="#">Click Here</a></p>
+                    <button class="btnlogin text-center"><Link>Sign In</Link></button>
+                    <p class="text-center forgetText">Forget Password ?  <Link>Click Here</Link></p>
                     <p class="text-center forgetText">Don't have an account ?  <Link  to="/register">Sign Up Now</Link></p>
                 </div>
             </div>

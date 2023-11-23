@@ -2,7 +2,7 @@ import img1 from "../img/department/Dentistry.jpg";
 import img2 from "../img/department/Cardiology.jpg";
 import img3 from "../img/department/ENT-Spitialists.jpg";
 import img4 from "../img/department/Neuroanatomy.jpg";
-import img5 from "../img/department/Neuroanatomy.jpg";
+import img5 from "../img/department/Blood-Screening.jpg";
 export const DepartmentsData = [
   {
     id: 1,
@@ -27,6 +27,6 @@ export const DepartmentsData = [
   {
     id: 5,
     name: "Blood Screening",
-    img: img3,
+    img: img5,
   },
 ];

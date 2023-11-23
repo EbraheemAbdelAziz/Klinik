@@ -1,10 +1,10 @@
-import { Navigate, createBrowserRouter  } from "react-router-dom";
-import HomePaage from "./pages/Home/HomePage";
+import { Navigate, createBrowserRouter } from "react-router-dom";
+import HomePaage from "./pages/User/Home/HomePage";
 import App from "./App";
-import Login from "./pages/Home/componants/Login/Login";
-import Register from "./pages/Home/componants/Register/Register";
-import { DepartmentPage } from "./pages/Department/DepartimentPage";
-import DoctorInfo from "./pages/Home/componants/DoctorPage/DoctorInfo";
+import Login from "./shared/Login/Login";
+import Register from "./shared/Register/Register";
+import { DepartmentPage } from "./pages/User/Department/DepartimentPage";
+import DoctorInfo from "./pages/Admin/DoctorPage/DoctorInfo";
 
 export const routes = createBrowserRouter([
   {

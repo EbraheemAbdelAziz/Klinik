@@ -1,9 +1,9 @@
-import Background1 from "../../../img/gallery/gallery1.png"
-import Background2 from "../../../img/gallery/gallery2.png"
-import Background3 from "../../../img/gallery/gallery3.png"
-import Background4 from "../../../img/gallery/gallery4.png"
-import Background5 from "../../../img/gallery/gallery5.png"
-import Background6 from "../../../img/gallery/gallery6.png"
+import Background1 from "../../../../img/gallery/gallery1.png"
+import Background2 from "../../../../img/gallery/gallery2.png"
+import Background3 from "../../../../img/gallery/gallery3.png"
+import Background4 from "../../../../img/gallery/gallery4.png"
+import Background5 from "../../../../img/gallery/gallery5.png"
+import Background6 from "../../../../img/gallery/gallery6.png"
 export const Gallery = ()=>{
 return(
     <div class="gallery-area section-padding30">
