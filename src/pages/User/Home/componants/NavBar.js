@@ -32,7 +32,7 @@ const NavBar = () => {
                             <Link to={"/doctors"}> Doctors </Link>
                           </li>
                           <li>
-                            <Link>Departments</Link>
+                            <Link to={"/departments?id=1"} >Departments</Link>
                             <ul class="submenu">
                               <li>
                                 <Link to={"/departments?id=1"}>Dentistry</Link>

@@ -4,7 +4,8 @@ import App from "./App";
 import Login from "./shared/Login/Login";
 import Register from "./shared/Register/Register";
 import { DepartmentPage } from "./pages/User/Department/DepartimentPage";
-import DoctorInfo from "./pages/Admin/DoctorPage/DoctorInfo";
+import DoctorInfo from "./pages/Doctor/DoctorPage/DoctorInfo";
+import { DoctorProfile } from "./pages/User/Doctor/DoctorProfile";
 
 export const routes = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const routes = createBrowserRouter([
       {
         path: "/doctorinfo",
         element: <DoctorInfo />,
+      },
+      {
+        path: "/doctorprofile",
+        element: <DoctorProfile />,
       },
     ],
   },

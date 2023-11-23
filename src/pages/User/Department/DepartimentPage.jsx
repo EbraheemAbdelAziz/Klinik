@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom"
 import { DepartmentsData } from "../../../data/Departments"
 import { useState , useEffect} from "react"
 import Image from "../../../img/hero/hero2.png"
+import { DepartmentsDotors } from "./DepartmentsDoctors"
 export const DepartmentPage = (props)=> {
     const [queryParameters] = useSearchParams()
     const id = queryParameters.get("id")
@@ -35,6 +36,7 @@ export const DepartmentPage = (props)=> {
                         </div>
                     </div>
                 </div>
+                <DepartmentsDotors id={id} />
             </main>
         </>
     )

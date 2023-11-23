@@ -10,7 +10,7 @@ export default function DoctorInfo() {
 
   return (
     <>
-      <div className='container mt-5'>
+      <div className='container mt-5 '>
         <div className='row mb-5'>
           <div className='col-md-5 offset'>
             <img src={doctorImg} className='doctorImg' alt="" />
@@ -90,7 +90,9 @@ export default function DoctorInfo() {
                       </div>
                     )
                   }else{
-                  return ""
+                  return (
+                    <h2>No comment for Now</h2>
+                  )
                 }
                 })
               }
