@@ -14,15 +14,7 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 1,
     departmentName: "Dentistry",
-    rate: 3,
-    img: doctorImg,
-  },
-  {
-    id: 11,
-    name: "Alvin Maxwell Smith",
-    departmentId: 1,
-    departmentName: "Dentistry",
-    rate: 3,
+    rate: 2.5,
     img: doctorImg,
   },
   {
@@ -30,7 +22,7 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 2,
     departmentName: "Cardiology",
-    rate: 3,
+    rate: 4,
     img: doctorImg,
   },
   {
@@ -38,7 +30,7 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 2,
     departmentName: "Cardiology",
-    rate: 3,
+    rate: 3.5,
     img: doctorImg,
   },
   {
@@ -46,7 +38,7 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 3,
     departmentName: "ENT Spitialists",
-    rate: 3,
+    rate: 2,
     img: doctorImg,
   },
   {
@@ -54,7 +46,7 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 3,
     departmentName: "ENT Spitialists",
-    rate: 3,
+    rate: 2.8,
     img: doctorImg,
   },
   {
@@ -62,7 +54,7 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 4,
     departmentName: "Neuroanatomy",
-    rate: 3,
+    rate: 3.9,
     img: doctorImg,
   },
   {
@@ -70,7 +62,7 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 4,
     departmentName: "Neuroanatomy",
-    rate: 3,
+    rate: 4.1,
     img: doctorImg,
   },
   {
@@ -78,7 +70,7 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 5,
     departmentName: "Blood Screening",
-    rate: 3,
+    rate: 2.9,
     img: doctorImg,
   },
   {
@@ -86,6 +78,14 @@ export const DoctorsData = [
     name: "Alvin Maxwell Smith",
     departmentId: 5,
     departmentName: "Blood Screening",
+    rate: 3.5,
+    img: doctorImg,
+  },
+  {
+    id: 11,
+    name: "Alvin Maxwell Smith",
+    departmentId: 1,
+    departmentName: "Dentistry",
     rate: 3,
     img: doctorImg,
   },

@@ -6,6 +6,7 @@ import Register from "./shared/Register/Register";
 import { DepartmentPage } from "./pages/User/Department/DepartimentPage";
 import DoctorInfo from "./pages/Doctor/DoctorPage/DoctorInfo";
 import { DoctorProfile } from "./pages/User/Doctor/DoctorProfile";
+import Manger from "./pages/Manager/Manger";
 
 export const routes = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const routes = createBrowserRouter([
       {
         path: "/doctorprofile",
         element: <DoctorProfile />,
+      },
+      {
+        path: "/manager",
+        element: <Manger />,
       },
     ],
   },
