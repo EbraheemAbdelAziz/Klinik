@@ -13,6 +13,7 @@ export const CommentsData = [
     comment:
       "This is a comment. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
+ 
   {
     id: 7,
     doctorId: 1,

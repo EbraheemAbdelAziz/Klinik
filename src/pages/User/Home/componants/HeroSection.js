@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./hero.css"
 const   HeroSection = () => {
   return (
@@ -7,7 +8,7 @@ const   HeroSection = () => {
         <div class="slider-active">
             {/* <!-- Single Slider --> */}
             <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
+                <div class="container smalledit">
                     <div class="row">
                         <div class="col-xl-7 col-lg-9 col-md-8 col-sm-9">
                             <div class="hero__caption">
@@ -18,7 +19,7 @@ const   HeroSection = () => {
                                     </strong>
                                 </h1>
                                 <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
-                                <a href="index.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></a>
+                                <Link to="/departments?id=1" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>

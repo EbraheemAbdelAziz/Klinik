@@ -2,3 +2,10 @@
  .header-btn{
     font-weight: bold !important;
 }
+.section-padding30 {
+    padding-top: 65px !important;
+    padding-bottom: 100px !important;
+}
+.smalledit{
+    margin-top: -90px !important;
+}

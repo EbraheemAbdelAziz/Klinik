@@ -18,6 +18,14 @@ export const DoctorsData = [
     img: doctorImg,
   },
   {
+    id: 11,
+    name: "Alvin Maxwell Smith",
+    departmentId: 1,
+    departmentName: "Dentistry",
+    rate: 3,
+    img: doctorImg,
+  },
+  {
     id: 3,
     name: "Alvin Maxwell Smith",
     departmentId: 2,
