@@ -1,5 +1,5 @@
 import "./hero.css"
-const HeroSection = () => {
+const   HeroSection = () => {
   return (
     <>
        {/* <!--? slider Area Start--> */}

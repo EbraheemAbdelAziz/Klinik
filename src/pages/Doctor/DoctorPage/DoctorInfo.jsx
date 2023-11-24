@@ -39,8 +39,8 @@ export default function DoctorInfo() {
         <h1 className='mt-3 text-center'>Your Appointments This Week</h1>
         <table className='text-center tableAppoints fw-b'>
         <thead  >
-      <tr  >
-        <th> Patient Name</th>
+      <tr>
+        <th>Patient Name</th>
         <th>Age</th>
         <th>Condition</th>
         <th>Day</th>
@@ -73,7 +73,7 @@ export default function DoctorInfo() {
         {/* comments  */}
          <div className='comments mb-5'>
           <h2>
-          Patients's Comments :
+          Patients's Comments (Your Feedback):
           </h2>
               {
                 CommentsData.map((comment)=>{
@@ -91,7 +91,7 @@ export default function DoctorInfo() {
                     )
                   }else{
                   return (
-                    <h2>No comment for Now</h2>
+                    <h2></h2>
                   )
                 }
                 })

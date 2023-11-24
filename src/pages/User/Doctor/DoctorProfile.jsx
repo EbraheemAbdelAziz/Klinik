@@ -38,44 +38,89 @@ export const DoctorProfile =()=>{
                     }
                 </div>
                 </div>
-                <div className='appoints'>
-                <h1 className='mt-3 text-center'>Your Appointments This Week</h1>
-                <table className='text-center tableAppoints fw-b'>
-                <thead  >
-            <tr  >
-                <th> Patient Name</th>
-                <th>Age</th>
-                <th>Condition</th>
-                <th>Day</th>
-                <th>Time</th>
-            </tr>
-            </thead>
-            <tbody>
-            {
-                AppointmentsData.map((appointment)=>{
-                if (appointment.doctorId == id) {
-                    return(
-                    <tr>
-                        <td>{appointment.patientName}</td>
-                        <td>{appointment.Age}</td>
-                        <td>{appointment.condition}</td>
-                        <td>{appointment.day}</td>
-                        <td>{appointment.time}</td>
-                    </tr>
-                    )
-                }else{
-                        return ""
-                        }
-                })
-            }
-            </tbody>
-                </table>
-                </div>
 
-                {/* comments  */}
-                <div className='comments mb-5'>
+
+             
+
+                <div >
+                    <h2 className='text-center mt-5 makeappointmentTitle ' >Make an Appointment with Me</h2>
+                </div>    
+
+            <div class="contact-form-main mb-50 mt-25 ">
+                <div class="container ">
+                    <div class="row justify-content-end">
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="form-wrapper">
+                                {/* <!--Section Tittle  --> */}
+                                <div class="form-tittle">
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="section-tittle section-tittle2">
+                                                <span>Appointment Apply Form</span>
+                                                <h2>Appointment Form</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* <!--End Section Tittle  --> */}
+                                <form id="contact-form" action="#" method="POST">
+                                    <div class="row ">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-box user-icon mb-30">
+                                                <input className='formAppointInput' type="text" name="name" placeholder="Name"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-box subject-icon mb-30">
+                                                <input className='formAppointInput' type="age" name="age" placeholder="Age"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-box email-icon mb-30">
+                                                <input className='formAppointInput' type="text" name="day" placeholder="Day"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="form-box email-icon mb-30">
+                                                <input className='formAppointInput' type="time" name="time" placeholder="Time"/>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-12">
+                                            <div class="form-box message-icon mb-65">
+                                                <textarea className='formAppointInput' name="Condition" id="Condition" placeholder="Condition"></textarea>
+                                            </div>
+                                            <div class="submit-info">
+                                                <button  class="btn" type="submit">Submit Now <i class="ti-arrow-right"></i> </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* <!-- contact left Img--> */}
+                <div class="from-left d-none d-lg-block">
+                    <img src={img} className='appointmentImg' alt="doctor img"/>
+                </div>
+            </div>
+
+              
+            
+
+            <div className='writeComment mb-100'>
+                <h2>Tell us Your Feedback</h2>
+                <h5>Your Comment :</h5>
+                <textarea name="" id="patientComment" cols="60" rows="7"></textarea>
+                <button className='btn btn-info btncomment'>send </button>
+
+            </div>
+
+             {/* comments  */}
+             <div className='comments mb-5'>
                 <h2>
-                Patients's Comments :
+                Some of Patients's Comments :
                 </h2>
                     {
                         CommentsData.map((comment)=>{
@@ -98,66 +143,10 @@ export const DoctorProfile =()=>{
                         
                     }
                 </div>
-            </div>
-            <div class="contact-form-main mb-100 mt-100">
-                <div class="container">
-                    <div class="row justify-content-end">
-                        <div class="col-xl-7 col-lg-7">
-                            <div class="form-wrapper">
-                                {/* <!--Section Tittle  --> */}
-                                <div class="form-tittle">
-                                    <div class="row ">
-                                        <div class="col-xl-12">
-                                            <div class="section-tittle section-tittle2">
-                                                <span>Appointment Apply Form</span>
-                                                <h2>Appointment Form</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <!--End Section Tittle  --> */}
-                                <form id="contact-form" action="#" method="POST">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="form-box user-icon mb-30">
-                                                <input type="text" name="name" placeholder="Name"/>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="form-box subject-icon mb-30">
-                                                <input type="age" name="age" placeholder="Age"/>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="form-box email-icon mb-30">
-                                                <input type="text" name="day" placeholder="Day"/>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="form-box email-icon mb-30">
-                                                <input type="text" name="time" placeholder="Time"/>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-lg-12">
-                                            <div class="form-box message-icon mb-65">
-                                                <textarea name="Condition" id="Condition" placeholder="Condition"></textarea>
-                                            </div>
-                                            <div class="submit-info">
-                                                <button class="btn" type="submit">Submit Now <i class="ti-arrow-right"></i> </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* <!-- contact left Img--> */}
-                <div class="from-left d-none d-lg-block">
-                    <img src={img} alt="doctor img"/>
-                </div>
-            </div>
+
+            
+        </div>
+            
         </>
     )
 }
