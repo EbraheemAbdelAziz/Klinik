@@ -15,6 +15,7 @@ export default function Manger() {
         <table className='text-center tableAppoints fw-b'>
         <thead  >
       <tr>
+        <th>ID</th>
         <th>Department Name</th>
         <th>Number of Doctors</th>
         <th>Actions</th>
@@ -25,6 +26,7 @@ export default function Manger() {
         DepartmentsData.map((department)=>{
             return(
               <tr>
+                <td>{department.id}</td>
                 <td>{department.name}</td>
                 <td>{department.numOfDoctors}</td>
                 <td><button className='me-2 btn-warning actionButton'>Update</button> <button className='actionButton btn-danger'>Delete</button> </td>
