@@ -3,7 +3,7 @@ import { DoctorsData } from "../../../../data/Doctors"
 export const Doctors = ()=>{
     return(
         <>
-        <div class="team-area section-padding30">
+        <div class="team-area section-padding20">
             <div class="container">
                 {/* <!-- Section Tittle --> */}
                 <div class="row justify-content-center">
@@ -21,7 +21,7 @@ export const Doctors = ()=>{
                             if (index < 3) {
                                 return(
                                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
-                                        <div class="single-team mb-30">
+                                        <div class="single-team mb-50">
                                             <div class="team-img">
                                                 <Link to={'/doctorprofile?id='+ Doctor.id}><img src={Doctor.img} alt=""/></Link>
                                             </div>
