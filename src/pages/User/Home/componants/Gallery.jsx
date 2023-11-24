@@ -6,7 +6,7 @@ import Background5 from "../../../../img/gallery/gallery5.png"
 import Background6 from "../../../../img/gallery/gallery6.png"
 export const Gallery = ()=>{
 return(
-    <div class="gallery-area section-padding30">
+    <div class="gallery-area section-padding5">
         <div class="container">
             {/* <!-- Section Tittle --> */}
             <div class="row justify-content-center">
