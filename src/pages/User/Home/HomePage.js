@@ -4,6 +4,7 @@ import { Doctors } from "./componants/Doctors";
 import { Gallery } from "./componants/Gallery";
 import HeroSection from "./componants/HeroSection";
 import Main from "./componants/Main";
+import { Medicines } from "./componants/Medicines";
 
 const HomePaage = () =>{
   return (
@@ -14,6 +15,7 @@ const HomePaage = () =>{
         <Departmint />
         <Gallery />
         <Doctors />
+        <Medicines />
       </Main>
     </>
   );

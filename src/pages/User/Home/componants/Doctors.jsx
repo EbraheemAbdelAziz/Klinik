@@ -48,8 +48,6 @@ export const Doctors = ()=>{
                 </div>
             </div>
         </div>
-        
-        
         </>
     )
 }

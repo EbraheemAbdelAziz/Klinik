@@ -11,9 +11,9 @@ const NavBar = () => {
                 {/* <!-- Logo --> */}
                 <div class="col-xl-2 col-lg-2 col-md-1">
                   <div class="logo">
-                    <a href="index.html">
+                    <Link to={'/'}>
                       <img src={logo} alt="logo" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div class="col-xl-10 col-lg-10 col-md-10">
@@ -32,7 +32,7 @@ const NavBar = () => {
                             <Link to={"/doctors"}> Doctors </Link>
                           </li>
                           <li>
-                            <Link to={"/departments?id=1"} >Departments</Link>
+                            <Link to={"/departments?id=1"}>Departments</Link>
                             <ul class="submenu">
                               <li>
                                 <Link to={"/departments?id=1"}>Dentistry</Link>
@@ -58,7 +58,7 @@ const NavBar = () => {
                             </ul>
                           </li>
                           <li>
-                            <a href="blog.html">Testimonials</a>
+                            <Link to={"/medicines"}>Medicines</Link>
                           </li>
                           <li>
                             <a href="contact.html">Contact</a>
