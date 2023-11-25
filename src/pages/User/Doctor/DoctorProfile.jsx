@@ -75,17 +75,25 @@ export const DoctorProfile =()=>{
                                                 <input className='formAppointInput' type="age" name="age" placeholder="Age"/>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="form-box email-icon mb-30">
-                                                <input className='formAppointInput' type="text" name="day" placeholder="Day"/>
-                                            </div>
-                                        </div>
+                                        
+                                        
+                                    
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-box email-icon mb-30">
                                                 <input className='formAppointInput' type="time" name="time" placeholder="Time"/>
                                             </div>
                                         </div>
-                                        
+                                        <div class="select-input" id="default-select">
+                                            <select placeholder='Day' name="day" >
+                                                <option value="Sunday">Sunday</option>
+                                                <option value="1">Monday</option>
+                                                <option value="Monday">Tuesday</option>
+                                                <option value="Wednesday">Wednesday</option>
+                                                <option value="Thursday">Thursday</option>
+                                                <option value="Friday">Friday</option>
+                                                <option value="Saturday">Saturday</option>
+                                            </select>
+                                        </div>
                                         <div class="col-lg-12">
                                             <div class="form-box message-icon mb-65">
                                                 <textarea className='formAppointInput' name="Condition" id="Condition" placeholder="Condition"></textarea>

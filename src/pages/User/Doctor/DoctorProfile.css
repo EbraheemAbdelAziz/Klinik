@@ -104,7 +104,21 @@ tr:hover {
     border-radius: 50%;
     margin-right: 15px;
 }
-
+.select-input {
+    width: 20% ;
+    padding: 10px;
+    font-size: 18px;
+    font-weight:500;
+}
+.select-input select {
+    width: 280%;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 60%;
+    padding: 10px 25px;
+    border: none;
+    box-shadow: 0 1px #00000015;
+}
 
 
 .comment-details h3 {
