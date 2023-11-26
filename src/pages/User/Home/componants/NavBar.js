@@ -28,9 +28,9 @@ const NavBar = () => {
                           {/* <li>
                             <Link to={"/about"}>About</Link>
                           </li> */}
-                          {/* <li>
+                          <li>
                             <Link to={"/doctors"}> Doctors </Link>
-                          </li> */}
+                          </li>
                           <li>
                             <Link to={"/departments?id=1"}>Departments</Link>
                             <ul class="submenu">

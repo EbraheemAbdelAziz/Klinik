@@ -21,10 +21,11 @@ export const Medicines = ()=>{
                                     <div className="med-card ">
                                         <h1>{item.name}</h1>
                                         <div className="underline"></div>
-                                        <div className="available">Available in{item.availableIn}</div>
+                                        <div className="available"><span className="font-weight-bold">Status :</span> Available in{item.availableIn}</div>
+                                        <div className="available"><span className="font-weight-bold">Department :</span> {item.departmentName}</div>
                                         <div className="treat-side">
                                             <div className="chiled">
-                                                <h2>For the treatment of</h2>
+                                                <h2 className="font-weight-bold">For the treatment of</h2>
                                                 {
                                                     item.treatment.map((i)=>{
                                                         return(<div className="option">{i}</div>)
@@ -32,7 +33,7 @@ export const Medicines = ()=>{
                                                 }
                                             </div>
                                             <div className="chiled">
-                                                <h2>Side Efficts</h2>
+                                                <h2 className="font-weight-bold">Side Efficts</h2>
                                                 {
                                                     item.sideEffects.map((i)=>{
                                                         return(<div className="option">{i} </div> )

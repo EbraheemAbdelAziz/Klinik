@@ -2,6 +2,7 @@ export const MedicinesData = [
   {
     id:1,
     departmentID:1,
+    departmentName:"Dentistry",
     quantity:3,
     name: "Hydrocodone",
     availableIn: "tablet or oral liquid",
@@ -18,6 +19,7 @@ export const MedicinesData = [
   {
     id:2,
     departmentID:1,
+    departmentName:"Dentistry",
     quantity:5,
     name: "Metformin",
     availableIn: "tablet or oral liquid",
@@ -31,6 +33,7 @@ export const MedicinesData = [
   {
     id:3,
     departmentID:2,
+    departmentName:"Cardiology",
     quantity:7,
     name: "Losartan",
     availableIn: "tablet",
@@ -48,6 +51,7 @@ export const MedicinesData = [
   {
     id:4,
     departmentID:2,
+    departmentName:"Cardiology",
     quantity:6,
     name: "Antibiotics",
     availableIn: "tablet or oral and intravenous fluid",
@@ -59,6 +63,7 @@ export const MedicinesData = [
   {
     id:5,
     departmentID:3,
+    departmentName:"ENT Spitialists",
     quantity:12,
     name: "Albuterol",
     availableIn: "tablet, oral liquid, inhaler, or nebule",
@@ -76,6 +81,7 @@ export const MedicinesData = [
   {
     id:6,
     departmentID:3,
+    departmentName:"ENT Spitialists",
     quantity:9,
     name: "Antihistamines",
     availableIn:
@@ -91,6 +97,7 @@ export const MedicinesData = [
   {
     id:7,
     departmentID:4,
+    departmentName:"Neuroanatomy",
     quantity:14,
     name: "Gabapentin",
     availableIn: "tablet, capsule and oral liquid",
@@ -106,6 +113,7 @@ export const MedicinesData = [
   {
     id:8,
     departmentID:4,
+    departmentName:"Neuroanatomy",
     quantity:13,
     name: "Gabapentin",
     availableIn: "tablet, capsule and oral liquid",
@@ -121,6 +129,7 @@ export const MedicinesData = [
   {
     id:9,
     departmentID:5,
+    departmentName:"Blood Screening",
     quantity:1,
     name: "Antibiotics",
     availableIn: "tablet or oral and intravenous fluid",
@@ -132,6 +141,7 @@ export const MedicinesData = [
   {
     id:10,
     departmentID:5,
+    departmentName:"Blood Screening",
     quantity:12,
     name: "Hydrocodone",
     availableIn: "tablet or oral liquid",
