@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import "../componants/Department.css"
+
+
 export const Departmint = ()=>{
     return(
         <div class="department_area section-padding2">
@@ -53,6 +55,8 @@ export const Departmint = ()=>{
                     </div>
                 </div>
             </div>
+
+          
         </div>
     </div>
 

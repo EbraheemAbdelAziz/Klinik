@@ -31,12 +31,12 @@ export const DepartmentPage = (props)=> {
                                 <div class="hero-cap hero-cap2 text-center">
                                     <h2 style={{color:"blue"}}>{Data.name}</h2>
                                 </div>
-                            </div>
+                            </div> 
                             </div>
                         </div>
                     </div>
                 </div>
-                <DepartmentsDotors id={id} />
+                <DepartmentsDotors id={id} name={Data.name} />
             </main>
         </>
     )

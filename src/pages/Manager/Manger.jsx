@@ -2,11 +2,13 @@ import React from 'react';
 import "../Manager/Manager.css";
 import { DepartmentsData } from '../../data/Departments';
 import { DoctorsData } from '../../data/Doctors';
+import { MedicinesData } from '../../data/Medicines';
 export default function Manger() {
   return (
     <>
-    <div className='container '>
-
+    <div className='container my-5'>
+      
+      
         {/* Department Section */}
         <div className='titlesection'>
             <h1>Manage Departments</h1>
@@ -76,6 +78,122 @@ export default function Manger() {
         </table>
         <div className='line'>
         </div>
+
+        <div className='titlesection'>
+            <h1>Manage Medicinces</h1>
+            <button className='btn btn-info'>Add New Medicines</button>
+        </div>
+
+        <div className="section">
+            <div className="container">
+             
+                <div className="row">
+                {
+                        MedicinesData.map((item)=>{
+                            if(item.departmentID == 1)
+                            {
+                                return(
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-">
+                                        <div className="med-card ">
+                                            <h1>{item.name}</h1>
+                                            <div className="underline mb-4 mt-3"></div>
+                                            <div className="available"> <span className='font-weight-bold'> Status</span> : Available in{item.availableIn}</div>
+                                            <div className="available"> <span className='font-weight-bold '> Department</span> : Dentistry</div>
+                                            <div className="available"> <span className='font-weight-bold'> Quantity</span> : {item.quantity} items</div>
+                                            <div className="text-center buttons">
+                                            <button className="btn-warning actionButtonMedicine mx-5">Upadte</button>
+                                            <button className="actionButtonMedicine btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                )
+                            }
+                            else if(item.departmentID == 2)
+                            {
+                                return(
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-">
+                                        <div className="med-card ">
+                                            <h1>{item.name}</h1>
+                                            <div className="underline mb-4 mt-3"></div>
+                                            <div className="available"> <span className='font-weight-bold'> Status</span> : Available in{item.availableIn}</div>
+                                            <div className="available"> <span className='font-weight-bold '> Department</span> : Cardiology</div>
+                                            <div className="available"> <span className='font-weight-bold'> Quantity</span> : {item.quantity} items</div>
+                                            <div className="text-center buttons">
+                                            <button className="btn-warning actionButtonMedicine mx-5">Upadte</button>
+                                            <button className="actionButtonMedicine btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                )
+                            }
+                            else if(item.departmentID == 3)
+                            {
+                                return(
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-">
+                                        <div className="med-card ">
+                                            <h1>{item.name}</h1>
+                                            <div className="underline mb-4 mt-3"></div>
+                                            <div className="available"> <span className='font-weight-bold'> Status</span> : Available in{item.availableIn}</div>
+                                            <div className="available"> <span className='font-weight-bold '> Department</span> : ENT Spitialists</div>
+                                            <div className="available"> <span className='font-weight-bold'> Quantity</span> : {item.quantity} items</div>
+                                            <div className="text-center buttons">
+                                            <button className="btn-warning actionButtonMedicine mx-5">Upadte</button>
+                                            <button className="actionButtonMedicine btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                )
+                            }
+                            if(item.departmentID == 4)
+                            {
+                                return(
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-">
+                                        <div className="med-card ">
+                                            <h1>{item.name}</h1>
+                                            <div className="underline mb-4 mt-3"></div>
+                                            <div className="available"> <span className='font-weight-bold'> Status</span> : Available in{item.availableIn}</div>
+                                            <div className="available"> <span className='font-weight-bold '> Department</span> : Neuroanatomy</div>
+                                            <div className="available"> <span className='font-weight-bold'> Quantity</span> : {item.quantity} items</div>
+                                            <div className="text-center buttons">
+                                            <button className="btn-warning actionButtonMedicine mx-5">Upadte</button>
+                                            <button className="actionButtonMedicine btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                )
+                            }
+                            if(item.departmentID == 5)
+                            {
+                                return(
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-">
+                                        <div className="med-card ">
+                                            <h1>{item.name}</h1>
+                                            <div className="underline mb-4 mt-3"></div>
+                                            <div className="available"> <span className='font-weight-bold'> Status</span> : Available in{item.availableIn}</div>
+                                            <div className="available"> <span className='font-weight-bold '> Department</span> : Blood Screening</div>
+                                            <div className="available"> <span className='font-weight-bold'> Quantity</span> : {item.quantity} items</div>
+                                            <div className="text-center buttons">
+                                            <button className="btn-warning actionButtonMedicine mx-5">Upadte</button>
+                                            <button className="actionButtonMedicine btn-danger">Delete</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                )
+                            }
+                            else{
+                                return "";
+                            }
+                        })
+                    }
+                </div>
+            </div>
+        </div>
+
 
       </div>
     </>
