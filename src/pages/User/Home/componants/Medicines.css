@@ -1,6 +1,7 @@
 .med-card {
     width: 100%;
     padding: 40px 40px 15px;
+    transition: ease 0.5s;
 }
 .med-card h1 {
     font-size: 32px;
@@ -44,9 +45,11 @@
 }
 .directions{
     display: flex;
-    background-image: linear-gradient(to left, #559af3, #1462f3, #559af3);    width: 100%;
+    background-image: linear-gradient(to left, #559af3, #1462f3, #559af3);
+    width: 100%;
     padding: 10px 40px;
     color: aliceblue;
+    margin-bottom: 10px;
 }
 .directions .head {
     font-size: 20px;
@@ -57,4 +60,8 @@
     font-size: 18px;
     align-self: center;
     margin-left: 10px;
+}
+
+.med-card:hover {
+    background-color: #559af3;
 }
