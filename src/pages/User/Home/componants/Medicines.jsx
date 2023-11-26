@@ -6,11 +6,11 @@ export const Medicines = ()=>{
         <div className="section-padding30">
             <div className="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="section-tittle text-center mb-100">
+                    <div class="col-lg-6 w-100 titlebox">
+                        <div class="section-tittle text-center mb-75">
                             <span>Medicines</span>
-                            <h2>Most prescribed medicines</h2>
-                        </div>
+                            <h2>Most Prescribed Medicines</h2>
+                        </div> 
                     </div>
                 </div>
                 <div className="row">
@@ -35,10 +35,14 @@ export const Medicines = ()=>{
                                                 <h2>Side Efficts</h2>
                                                 {
                                                     item.sideEffects.map((i)=>{
-                                                        return(<div className="option">{i}</div>)
+                                                        return(<div className="option">{i} </div> )
                                                     })
-                                                }
+                                                    
+                                                }  
                                             </div>
+                                        </div>
+                                        <div className="text-center">
+                                        <button className="btn btn-buy">Buy One</button>
                                         </div>
                                     </div>
                                     <div className="directions">

@@ -25,12 +25,12 @@ const NavBar = () => {
                           <li>
                             <Link to={"/home"}>Home</Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link to={"/about"}>About</Link>
-                          </li>
-                          <li>
+                          </li> */}
+                          {/* <li>
                             <Link to={"/doctors"}> Doctors </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link to={"/departments?id=1"}>Departments</Link>
                             <ul class="submenu">
@@ -60,9 +60,9 @@ const NavBar = () => {
                           <li>
                             <Link to={"/medicines"}>Medicines</Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <a href="contact.html">Contact</a>
-                          </li>
+                          </li> */}
                         </ul>
                       </nav>
                     </div>
