@@ -49,8 +49,6 @@ export const Medicines = ()=>{
                             )
                         })
                     }
-                    
-
                 </div>
             </div>
         </div>
