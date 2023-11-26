@@ -19,16 +19,15 @@ const   HeroSection = () => {
                                     </strong>
                                 </h1>
                                 <p data-animation="fadeInLeft" data-delay="0.1s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi uquip ex ea commodo consequat is aute irure.</p>
-                                <Link to="/departments?id=1" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></Link>
+                                <Link to={"/departs"} class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s">Appointment <i class="ti-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>
-                </div>          
+                </div>
             </div>
         </div>
     </div>
     {/* <!-- slider Area End--> */}
-    
     </>
   );
 };

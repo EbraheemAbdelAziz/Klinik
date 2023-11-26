@@ -1,5 +1,6 @@
 import img1 from "../../../../img/gallery/about2.png"
 import img2 from "../../../../img/gallery/about1.png"
+import { Link } from "react-router-dom";
 const About= ()=>{
  return (
     <>
@@ -16,10 +17,10 @@ const About= ()=>{
                         </div>
                         <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
                         <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></a>
+                            <Link to={"/departs"} class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></Link>
                         </div>
                         <div class="about-btn1 mb-30">
-                            <a href="about.html" class="btn about-btn2">Appointment <i class="ti-arrow-right"></i></a>
+                            <Link to={"/medicines"}  class="btn about-btn2">Medicines <i class="ti-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>

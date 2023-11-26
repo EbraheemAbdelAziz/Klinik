@@ -8,6 +8,7 @@ import DoctorInfo from "./pages/Doctor/DoctorPage/DoctorInfo";
 import { DoctorProfile } from "./pages/User/Doctor/DoctorProfile";
 import Manger from "./pages/Manager/Manger";
 import { Medicines } from "./pages/User/Home/componants/Medicines";
+import { Departmint } from "./pages/User/Home/componants/Departmint";
 
 export const routes = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ export const routes = createBrowserRouter([
       {
         path: "/medicines",
         element: <Medicines />,
+      },
+      {
+        path: "/departs",
+        element: <Departmint />,
       },
       {
         path: "/doctorinfo",
