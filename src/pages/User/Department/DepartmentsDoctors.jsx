@@ -28,7 +28,7 @@ export const DepartmentsDotors = (props)=>{
                                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
                                             <div class="single-team mb-30">
                                                 <div class="team-img">
-                                                    <Link to={'/doctorprofile?id='+ Doctor.id}><img src={Doctor.img} alt=""/></Link>
+                                                    <Link to={'/doctorprofile?id='+ Doctor.id}><img src={Doctor.img} height="400px" alt=""/></Link>
                                                 </div>
                                                 <div class="team-caption">
                                                     <h3><Link to={'/doctorprofile?id='+ Doctor.id}>{Doctor.name}</Link></h3>

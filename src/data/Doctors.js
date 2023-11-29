@@ -1,4 +1,13 @@
 import doctorImg from "../img/gallery/team2.png";
+import doctorImg1 from "../img/gallery/1.jpg";
+import doctorImg3 from "../img/gallery/2.jpg";
+import doctorImg4 from "../img/gallery/3.jpg";
+import doctorImg2 from "../img/gallery/4.jpg";
+import doctorImg5 from "../img/gallery/5.jpg";
+import doctorImg6 from "../img/gallery/6.jpg";
+import doctorImg7 from "../img/gallery/7.jpg";
+import doctorImg8 from "../img/gallery/8.jpg";
+
 
 export const DoctorsData = [
   {
@@ -11,82 +20,74 @@ export const DoctorsData = [
   },
   {
     id: 2,
-    name: "Alvin Maxwell Smith",
+    name: "Moses Ward",
     departmentId: 1,
     departmentName: "Dentistry",
     rate: 2.5,
-    img: doctorImg,
+    img: doctorImg2,
   },
   {
     id: 3,
-    name: "Alvin Maxwell Smith",
+    name: "Julius Phillips",
     departmentId: 2,
     departmentName: "Cardiology",
     rate: 4,
-    img: doctorImg,
+    img: doctorImg3,
   },
   {
     id: 4,
-    name: "Alvin Maxwell Smith",
+    name: "Colten Mills",
     departmentId: 2,
     departmentName: "Cardiology",
     rate: 3.5,
-    img: doctorImg,
+    img: doctorImg4,
   },
   {
     id: 5,
-    name: "Alvin Maxwell Smith",
+    name: "Aliya Chidinma",
     departmentId: 3,
     departmentName: "ENT Spitialists",
     rate: 2,
-    img: doctorImg,
+    img: doctorImg1,
   },
   {
     id: 6,
-    name: "Alvin Maxwell Smith",
+    name: "Eliana Everett",
     departmentId: 3,
     departmentName: "ENT Spitialists",
     rate: 2.8,
-    img: doctorImg,
+    img: doctorImg5,
   },
   {
     id: 7,
-    name: "Alvin Maxwell Smith",
+    name: "Olivia Yoder",
     departmentId: 4,
     departmentName: "Neuroanatomy",
     rate: 3.9,
-    img: doctorImg,
+    img: doctorImg6,
   },
   {
     id: 8,
-    name: "Alvin Maxwell Smith",
+    name: "Bear Grant",
     departmentId: 4,
     departmentName: "Neuroanatomy",
     rate: 4.1,
-    img: doctorImg,
+    img: doctorImg7,
   },
   {
     id: 9,
-    name: "Alvin Maxwell Smith",
+    name: "Marcus Lynch",
     departmentId: 5,
     departmentName: "Blood Screening",
     rate: 2.9,
-    img: doctorImg,
+    img: doctorImg8,
   },
   {
     id: 10,
-    name: "Alvin Maxwell Smith",
+    name: "Omar Shelton",
     departmentId: 5,
     departmentName: "Blood Screening",
     rate: 3.5,
-    img: doctorImg,
-  },
-  {
-    id: 11,
-    name: "Alvin Maxwell Smith",
-    departmentId: 1,
-    departmentName: "Dentistry",
-    rate: 3,
     img: doctorImg,
   },
 ];
