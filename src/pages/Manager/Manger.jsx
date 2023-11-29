@@ -3,6 +3,7 @@ import "../Manager/Manager.css";
 import { DepartmentsData } from '../../data/Departments';
 import { DoctorsData } from '../../data/Doctors';
 import { MedicinesData } from '../../data/Medicines';
+import { Link } from 'react-router-dom';
 export default function Manger() {
   return (
     <>
@@ -12,7 +13,7 @@ export default function Manger() {
         {/* Department Section */}
         <div className='titlesection'>
             <h1>Manage Departments</h1>
-            <button className='btn btn-info'>Add New Department</button>
+            <button className='btn btn-info'><Link to={"/addDepartment"}>Add New Department</Link></button>
         </div>
         <table className='text-center tableAppoints fw-b'>
         <thead  >
@@ -45,7 +46,7 @@ export default function Manger() {
         {/* Doctors section */}
         <div className='titlesection'>
             <h1>Manage Doctors</h1>
-            <button className='btn btn-info'>Add New Doctor</button>
+            <button className='btn btn-info'><Link to={"/addDoctor"}>Add New Doctor</Link></button>
         </div>
         <table className='text-center tableAppoints fw-b'>
         <thead  >
@@ -78,10 +79,10 @@ export default function Manger() {
         </table>
         <div className='line'>
         </div>
-
+        
         <div className='titlesection'>
             <h1>Manage Medicinces</h1>
-            <button className='btn btn-info'>Add New Medicines</button>
+            <button className='btn btn-info' ><Link to={"/addMedicies"}>Add New Medicines</Link></button>
         </div>
 
         <div className="section">
