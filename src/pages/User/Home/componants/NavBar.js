@@ -11,7 +11,7 @@ const NavBar = () => {
                 {/* <!-- Logo --> */}
                 <div class="col-xl-2 col-lg-2 col-md-1">
                   <div class="logo">
-                    <Link to={'/'}>
+                    <Link to={'/home'}>
                       <img src={logo} alt="logo" />
                     </Link>
                   </div>
@@ -29,7 +29,7 @@ const NavBar = () => {
                             <Link to={"/about"}>About</Link>
                           </li> */}
                           <li>
-                            <Link to={"/doctors"}> Doctors </Link>
+                            <Link to={"/home"}> Doctors </Link>
                           </li>
                           <li>
                             <Link to={"/departments?id=1"}>Departments</Link>

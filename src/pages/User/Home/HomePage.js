@@ -13,7 +13,7 @@ const HomePaage = () =>{
         <HeroSection />
         <About />
         <Departmint />
-        <Gallery />
+        <Gallery /> 
         <Doctors />
         <Medicines />
       </Main>

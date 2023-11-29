@@ -73,6 +73,10 @@
     color: rgb(3, 80, 187);
     font-family: 'Segoe UI ';
 }
+.alert{
+    font-size: 15px;
+    font-weight: bold;
+}
 
 @media screen and (max-width:420px){
 
