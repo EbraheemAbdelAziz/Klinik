@@ -1,6 +1,9 @@
 import "./Medicines.css"
 import {MedicinesData} from "../../../../data/Medicines"
 export const Medicines = ()=>{
+    const buymedicine=()=>{
+        alert("Done ! Your Medicine Added to Chart .");
+    }
     return(
         <>
         <div className="section-padding30">
@@ -43,7 +46,7 @@ export const Medicines = ()=>{
                                             </div>
                                         </div>
                                         <div className="text-center">
-                                        <button className="btn btn-buy">Buy One</button>
+                                        <button className="btn btn-buy" onClick={buymedicine}>Buy One</button>
                                         </div>
                                     </div>
                                     <div className="directions">
