@@ -50,8 +50,8 @@
 }
 .inerrloginBox .inputLogin2:focus{
     border-radius: 15px; 
-    border: 2.2px solid #205fb3 ;
-   }
+    border: 2.2px solid #205fb3;
+}
 .btnlogin{
     padding: 10px 20px;
     margin-top: 25px;
@@ -63,6 +63,7 @@
     font-weight: bold;
     border-radius: 15px;
     font-family: 'Segoe UI ';
+    cursor: pointer;
 }   
 .forgetText{
     font-weight: bold;

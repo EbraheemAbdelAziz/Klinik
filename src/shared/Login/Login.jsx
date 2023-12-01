@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './Login.css'
 import loginPhoto from '../../img/logIn.jpg'
 import { Link } from 'react-router-dom';
+import { Navigate } from "react-router-dom";
 export default function Login() {
     const [username , setUsername]=useState("");
     const [password , setPassword]=useState("");
@@ -41,7 +42,7 @@ export default function Login() {
                         <input className='inputLogin2' type="password" placeholder="Password" value={password} 
                         onChange={(e)=>{setPassword(e.target.value)}}/>
                     </div>
-                    <button class="btnlogin text-center" onClick={signIn}><Link to={link} onClick={signIn}>Sign In</Link></button>
+                    <button class="btnlogin text-center" onClick={signIn}> <Navigate to={link} replace={true} />Sign in</button>
                     <p class="text-center forgetText">Forget Password ?  <Link>Click Here</Link></p>
                     <p class="text-center forgetText">Don't have an account ?  <Link  to="/register">Sign Up Now</Link></p>
                 </div>

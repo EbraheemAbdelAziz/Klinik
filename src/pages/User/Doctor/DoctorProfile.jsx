@@ -1,6 +1,4 @@
-import React from 'react';
-
-import doctorImg from "../../../img/gallery/team2.png";
+import React, { useState } from 'react';
 import commentImg from "../../../img/gallery/team1.png";
 import './DoctorProfile.css';
 import { DoctorsData } from '../../../data/Doctors';
@@ -9,27 +7,51 @@ import { CommentsData } from '../../../data/Comments'
 import { useSearchParams } from 'react-router-dom';
 import img from "../../../img/gallery/contact_form.png"
 export const DoctorProfile =()=>{
-    const [queryParameters] = useSearchParams()
-    const id = queryParameters.get("id")
+    const [queryParameters] = useSearchParams();
+    const id = queryParameters.get("id");
+
+    const [appointment , setAppointment ] = useState({
+        name:"",
+        age :"",
+        time:"",   
+        day:"",
+        condition:"",
+    });
+    const [msg,setMsg]=useState(false);
+    const [errmsg,setErrmsg]=useState(false);
+    const confirmAppointment = (e) => {
+        e.preventDefault()
+        if(appointment.name != "" && appointment.age != "" && appointment.time != "" && appointment.day !="" &&appointment.condition != ""){
+            setMsg(true);
+            setErrmsg(false);
+            setAppointment({...appointment,name:"",age:"",time:"",day:"",condition:""})
+        }else{
+            setMsg(false);
+            setErrmsg(true);
+        }
+    };
+
     return(
         <>
             <div className='container mt-5'>
                 <div className='row mb-5'>
-                <div className='col-md-5 offset'>
-                    <img src={doctorImg} className='doctorImg' alt="" />
-                </div>
-                <div className='col-md-6 doctorInfo mt-4'>
+                
                     {
                     DoctorsData.map((doctor)=>{
                         if (doctor.id == id) {
                         return(
-                            <div>
+                            <>
+                            <div className='col-md-5 offset'>
+                                <img src={doctor.img} className='doctorImg' alt="" />
+                            </div>
+                            <div className='col-md-6 doctorInfo mt-4'>
                             <h1>{doctor.name}</h1>
                             <h2>Department : <span>{doctor.departmentName}</span> </h2>
                             <h2>Scientific Degree : <span> Master's Degree in {doctor.departmentName}</span> </h2>
-                            <h2 className='rate'>Rate :</h2>
+                            <h2 className='rate '>Rate :</h2>
                             <h2 className='stars'>&#9733; &#9733; &#9733; &#9734; &#9734;</h2>
                             </div>
+                            </>
                         )
                         }else{
                         return ""
@@ -37,10 +59,6 @@ export const DoctorProfile =()=>{
                     })
                     }
                 </div>
-                </div>
-
-
-             
 
                 <div >
                     <h2 className='text-center mt-5 makeappointmentTitle ' >Make an Appointment with Me</h2>
@@ -59,32 +77,40 @@ export const DoctorProfile =()=>{
                                                 <span>Appointment Apply Form</span>
                                                 <h2>Appointment Form</h2>
                                             </div>
+                                            {msg && errmsg==false ?<div class="alert alert-success w-75 m-auto text-center" role="alert">
+                                                Your Appointment Is Saved Succesffully. 
+                                            </div>:""}
+                                            {errmsg && msg==false ?<div class="alert alert-danger w-75 m-auto text-center" role="alert">
+                                                Please fill all feilds.
+                                            </div>:""}
                                         </div>
                                     </div>
                                 </div>
                                 {/* <!--End Section Tittle  --> */}
-                                <form id="contact-form" action="#" method="POST">
+                                <form id="contact-form" >
                                     <div class="row ">
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-box user-icon mb-30">
-                                                <input className='formAppointInput' type="text" name="name" placeholder="Name"/>
+                                                <input className='formAppointInput' value={appointment.name} type="text" name="name" placeholder="Name"
+                                                onChange={(e)=>{setAppointment({...appointment,name:e.target.value})}}/>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-box subject-icon mb-30">
-                                                <input className='formAppointInput' type="age" name="age" placeholder="Age"/>
+                                                <input className='formAppointInput' value={appointment.age} type="number" name="age" placeholder="Age"
+                                                onChange={(e)=>{setAppointment({...appointment,age:e.target.value})}}/>
                                             </div>
                                         </div>
-                                        
-                                        
-                                    
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-box email-icon mb-30">
-                                                <input className='formAppointInput' type="time" name="time" placeholder="Time"/>
+                                                <input className='formAppointInput' value={appointment.time} type="time" name="time" placeholder="Time"
+                                                onChange={(e)=>{setAppointment({...appointment,time:e.target.value})}}/>
                                             </div>
                                         </div>
                                         <div class="select-input" id="default-select">
-                                            <select placeholder='Day' name="day" >
+                                            <select placeholder='Day' name="day" value={appointment.day} 
+                                                onChange={(e)=>{setAppointment({...appointment,day:e.target.value})}} >
+                                                <option value="day">day</option>
                                                 <option value="Sunday">Sunday</option>
                                                 <option value="1">Monday</option>
                                                 <option value="Monday">Tuesday</option>
@@ -96,11 +122,12 @@ export const DoctorProfile =()=>{
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-box message-icon mb-65">
-                                                <textarea className='formAppointInput' name="Condition" id="Condition" placeholder="Condition"></textarea>
+                                                <textarea className='formAppointInput' value={appointment.condition} name="Condition" id="Condition" placeholder="Condition" 
+                                                onChange={(e)=>{setAppointment({...appointment,condition:e.target.value})}}></textarea>
                                             </div>
-                                            <div class="submit-info">
-                                                <button  class="btn" type="submit">Submit Now <i class="ti-arrow-right"></i> </button>
-                                            </div>
+                                            {/* <div class="submit-info"> */}
+                                                <button  class="btn"  onClick={confirmAppointment}>Submit Now <i class="ti-arrow-right"></i> </button>
+                                            {/* </div> */}
                                         </div>
                                     </div>
                                 </form>

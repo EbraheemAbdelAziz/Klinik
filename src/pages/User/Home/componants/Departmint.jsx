@@ -55,8 +55,6 @@ export const Departmint = ()=>{
                     </div>
                 </div>
             </div>
-
-          
         </div>
     </div>
 

@@ -28,9 +28,7 @@ const NavBar = () => {
                           {/* <li>
                             <Link to={"/about"}>About</Link>
                           </li> */}
-                          <li>
-                            <Link to={"/home"}> Doctors </Link>
-                          </li>
+                          
                           <li>
                             <Link to={"/departments?id=1"}>Departments</Link>
                             <ul class="submenu">
@@ -59,6 +57,9 @@ const NavBar = () => {
                           </li>
                           <li>
                             <Link to={"/medicines"}>Medicines</Link>
+                          </li>
+                          <li>
+                            <Link to={"/doctors"}> Doctors </Link>
                           </li>
                           {/* <li>
                             <a href="contact.html">Contact</a>

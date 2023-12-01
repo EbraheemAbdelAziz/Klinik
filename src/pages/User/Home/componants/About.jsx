@@ -17,7 +17,7 @@ const About= ()=>{
                         </div>
                         <p>There arge many variations ohf pacgssages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
                         <div class="about-btn1 mb-30">
-                            <Link to={"/departs"} class="btn about-btn">Find Doctors .<i class="ti-arrow-right"></i></Link>
+                            <Link to={"/doctors"} class="btn about-btn">Find Doctors <i class="ti-arrow-right"></i></Link>
                         </div>
                         <div class="about-btn1 mb-30">
                             <Link to={"/medicines"}  class="btn about-btn2">Medicines <i class="ti-arrow-right"></i></Link>
@@ -25,7 +25,7 @@ const About= ()=>{
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                   <div class="about-img ">
+                    <div class="about-img ">
                         <div class="about-font-img d-none d-lg-block">
                             <img src={img1} alt="" />
                         </div>

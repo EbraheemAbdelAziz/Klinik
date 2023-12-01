@@ -12,6 +12,7 @@ import { Departmint } from "./pages/User/Home/componants/Departmint";
 import AddDepartment from "./pages/Manager/addDepartment";
 import AddDoctor from "./pages/Manager/addDoctor";
 import AddMedicines from "./pages/Manager/addMedicines";
+import Doctors from "./pages/User/Doctors/Doctors";
 
 export const routes = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ export const routes = createBrowserRouter([
       {
         path: "/manager",
         element: <Manger />,
+      },
+      {
+        path: "/doctors",
+        element: <Doctors />,
       },
       {
         path: "/addDepartment",

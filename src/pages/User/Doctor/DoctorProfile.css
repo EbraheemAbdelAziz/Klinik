@@ -16,20 +16,20 @@
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 20px;
+    color: rgb(55, 52, 52) ;
 }
 
 .doctorInfo h2 span {
     font-weight: bold;
     color: #205fb3;
 }
-
 .rate {
     /* margin-top: 65px; */
     margin-bottom: 5px !important;
 }
 
 .stars {
-    color: #205fb3;
+    color: #205fb3 !important;
 }
 
 .tableAppoints {
