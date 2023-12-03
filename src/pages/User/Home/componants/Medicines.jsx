@@ -41,8 +41,7 @@ export const Medicines = ()=>{
                                                     item.sideEffects.map((i)=>{
                                                         return(<div className="option">{i} </div> )
                                                     })
-                                                    
-                                                }  
+                                                }
                                             </div>
                                         </div>
                                         <div className="text-center">

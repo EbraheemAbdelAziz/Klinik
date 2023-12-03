@@ -25,7 +25,6 @@ export const Departmint = ()=>{
                                     <i class="flaticon-teeth"></i>
                                     <h4>Dentistry</h4>
                                 </Link>
-                                
                             </li>
                             <li class="nav-item">
                                 <Link className="hi" to={"/departments?id=2"}>
@@ -57,6 +56,5 @@ export const Departmint = ()=>{
             </div>
         </div>
     </div>
-
     )
 }

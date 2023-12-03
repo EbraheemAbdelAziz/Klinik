@@ -1,11 +1,12 @@
 .med-card {
     width: 100%;
     padding: 40px 40px 15px;
-    transition: ease 0.5s;
+    transition: all 0.4s ease-in-out;
 }
 .med-card h1 {
     font-size: 32px;
     font-weight: 700;
+    transition: all 0.4s ease-in-out;
 }
 
 .med-card .underline {
@@ -17,22 +18,27 @@
     font-size: 18px;
     font-weight: 500;
     padding: 10px 0;
+    transition: all 0.4s ease-in-out;
 }
 .med-card .treat-side {
     display: flex;
     gap: 15px;
     margin: 20px 0;
+    transition: all 0.4s ease-in-out;
 }
 .med-card .chiled{
     width: 50%;
+        transition: all 0.4s ease-in-out;
 }
 .med-card .chiled h2 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
+    transition: all 0.4s ease-in-out;
 }
 .med-card .chiled .option {
     font-size: 18px;
+        transition: all 0.4s ease-in;
 }
 .med-card .chiled .option::before{
     content: "";
@@ -73,8 +79,14 @@
 }
 .btn-buy:hover{
     background-color: #073791 !important;
-    
 }
 .titlebox{
  width: 500px !important;
+}
+.med-card:hover h1 ,
+.med-card:hover div {
+    color: white;
+}
+.med-card:hover .option::before {
+    background-color: white ;
 }

@@ -11,7 +11,7 @@ const NavBar = () => {
                 {/* <!-- Logo --> */}
                 <div class="col-xl-2 col-lg-2 col-md-1">
                   <div class="logo">
-                    <Link to={'/home'}>
+                    <Link to={"/home"}>
                       <img src={logo} alt="logo" />
                     </Link>
                   </div>
@@ -28,9 +28,9 @@ const NavBar = () => {
                           {/* <li>
                             <Link to={"/about"}>About</Link>
                           </li> */}
-                          
+
                           <li>
-                            <Link to={"/departments?id=1"}>Departments</Link>
+                            <Link to={"/departs"}>Departments</Link>
                             <ul class="submenu">
                               <li>
                                 <Link to={"/departments?id=1"}>Dentistry</Link>
@@ -69,7 +69,7 @@ const NavBar = () => {
                     </div>
                     <div class="header-right-btn f-right d-none d-lg-block ml-30">
                       <Link to="/login" class="btn header-btn">
-                        Sign In
+                        Logout
                       </Link>
                     </div>
                   </div>
