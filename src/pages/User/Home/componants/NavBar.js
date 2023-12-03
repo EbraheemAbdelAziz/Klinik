@@ -7,7 +7,7 @@ const NavBar = (props) => {
   console.log(pathname);
   return (
     <>
-      {pathname === "/login" || pathname === "/register" ? ("") :(
+      {pathname === "/login" || pathname === "/register" || pathname === "/" ? ("") :(
         <header>
           <div class="header-area">
             <div class="main-header header-sticky">

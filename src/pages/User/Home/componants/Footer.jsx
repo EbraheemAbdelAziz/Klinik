@@ -2,11 +2,11 @@ import { Link, useLocation } from "react-router-dom"
 import Logo from "../../../../img/logo/logo2_footer.png"
 export const Footer = ()=>{
     const location = useLocation()
-  const { pathname} = location;
+  const {pathname} = location;
     return(
         <>
         {
-            pathname === "/login" || pathname === "/register" ? ("") :
+            pathname === "/login" || pathname === "/register" || pathname === "/" ? ("") :
             <footer>
         {/* <!--? Footer Start--> */}
         <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.jpg">

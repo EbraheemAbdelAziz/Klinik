@@ -9,10 +9,7 @@ export default function Login(props) {
     const [username , setUsername]=useState("");
     const [password , setPassword]=useState("");
     const navegate = useNavigate()
-    const [errMsg , setErrMsg]=useState({
-        state: false,
-        msg:""
-    });
+    const [errMsg , setErrMsg ]=useState(false);
 
     const signIn=()=>{
         if(username==="doctor@gmail.com"&& password==="123456"){
@@ -41,7 +38,7 @@ export default function Login(props) {
                     <form onSubmit={signIn}>
                         <h2 >Sign In Page</h2>
                     <div class="inputs ">
-                    {errMsg.state?<div class="alert alert-danger w-75 m-auto " role="alert">
+                    {errMsg ? <div class="alert alert-danger w-75 m-auto " role="alert">
                         Incorrect Password or Username
                     </div>:""}
                         <input className='inputLogin1' type="email" placeholder="User Name" value={username} 
