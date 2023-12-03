@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import Logo from "../../../../img/logo/logo2_footer.png"
 export const Footer = ()=>{
+    const location = useLocation()
+  const { pathname} = location;
     return(
         <>
-        <footer>
+        {
+            pathname === "/login" || pathname === "/register" ? ("") :
+            <footer>
         {/* <!--? Footer Start--> */}
         <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.jpg">
             <div class="container">
@@ -74,6 +78,7 @@ export const Footer = ()=>{
         </div>
         {/* <!-- Footer End--> */}
     </footer>
+        }
         </>
     )
 }

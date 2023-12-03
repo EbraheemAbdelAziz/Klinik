@@ -1,23 +1,29 @@
-
 import React, { useState } from 'react';
 import './Login.css'
 import loginPhoto from '../../img/logIn.jpg'
-import { Link } from 'react-router-dom';
-import { Navigate } from "react-router-dom";
-export default function Login() {
+import { Link, useNavigate } from 'react-router-dom';
+
+
+export default function Login(props) {
+
     const [username , setUsername]=useState("");
     const [password , setPassword]=useState("");
-    const [link , setLink]=useState("/login");
-    const [errMsg , setErrMsg]=useState(false);
+    const navegate = useNavigate()
+    const [errMsg , setErrMsg]=useState({
+        state: false,
+        msg:""
+    });
+
     const signIn=()=>{
-        if(username==="doctor@gmail.com"&&password==="123456"){
-            setLink("/doctorinfo");
+        if(username==="doctor@gmail.com"&& password==="123456"){
+            navegate("/doctorinfo")
         }
-        else if(username==="manager@gmail.com"&&password==="123456"){
-            setLink("/manager");
+        else if(username==="manager@gmail.com"&& password==="123456"){
+            navegate("/manager")
+
         }
-        else if(username==="user@gmail.com"&&password==="123456"){
-            setLink("/home");
+        else if(username==="user@gmail.com"&& password==="123456"){
+            navegate("/home")
         }
         else{
             setErrMsg(true);
@@ -32,9 +38,10 @@ export default function Login() {
                     <img src={loginPhoto} className='w-100 imgLogin' alt="" />
                 </div>
                 <div class="col-md-7 text-center inerrloginBox  ">
-                    <h2 >Sign In Page</h2>
+                    <form onSubmit={signIn}>
+                        <h2 >Sign In Page</h2>
                     <div class="inputs ">
-                    {errMsg?<div class="alert alert-danger w-75 m-auto " role="alert">
+                    {errMsg.state?<div class="alert alert-danger w-75 m-auto " role="alert">
                         Incorrect Password or Username
                     </div>:""}
                         <input className='inputLogin1' type="email" placeholder="User Name" value={username} 
@@ -42,9 +49,9 @@ export default function Login() {
                         <input className='inputLogin2' type="password" placeholder="Password" value={password} 
                         onChange={(e)=>{setPassword(e.target.value)}}/>
                     </div>
-                    <button class="btnlogin text-center" onClick={signIn}> <Navigate to={link} replace={true} />Sign in</button>
-                    <p class="text-center forgetText">Forget Password ?  <Link>Click Here</Link></p>
+                    <button class="btnlogin text-center" type='submit'> Sign in</button>
                     <p class="text-center forgetText">Don't have an account ?  <Link  to="/register">Sign Up Now</Link></p>
+                    </form>
                 </div>
             </div>
         </div>
