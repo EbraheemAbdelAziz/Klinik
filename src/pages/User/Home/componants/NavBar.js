@@ -1,10 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../../img/logo/logo.png";
 
-const NavBar = (props) => {
+const NavBar = () => {
   const location = useLocation()
   const { pathname} = location;
-  console.log(pathname);
   return (
     <>
       {pathname === "/login" || pathname === "/register" || pathname === "/" ? ("") :(
