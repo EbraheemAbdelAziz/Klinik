@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import commentImg from "../../../img/gallery/team1.png";
 import './DoctorProfile.css';
 import { DoctorsData } from '../../../data/Doctors';
-import { AppointmentsData } from '../../../data/Appointments';
 import { CommentsData } from '../../../data/Comments'
 import { useSearchParams } from 'react-router-dom';
 import img from "../../../img/gallery/contact_form.png"
@@ -21,7 +20,7 @@ export const DoctorProfile =()=>{
     const [errmsg,setErrmsg]=useState(false);
     const confirmAppointment = (e) => {
         e.preventDefault()
-        if(appointment.name != "" && appointment.age != "" && appointment.time != "" && appointment.day !="" &&appointment.condition != ""){
+        if(appointment.name !== "" && appointment.age !== "" && appointment.time !== "" && appointment.day !=="" &&appointment.condition !== ""){
             setMsg(true);
             setErrmsg(false);
             setAppointment({...appointment,name:"",age:"",time:"",day:"",condition:""})
@@ -77,10 +76,10 @@ export const DoctorProfile =()=>{
                                                 <span>Appointment Apply Form</span>
                                                 <h2>Appointment Form</h2>
                                             </div>
-                                            {msg && errmsg==false ?<div class="alert alert-success w-75 m-auto text-center" role="alert">
+                                            {msg && errmsg===false ?<div class="alert alert-success w-75 m-auto text-center" role="alert">
                                                 Your Appointment Is Saved Succesffully. 
                                             </div>:""}
-                                            {errmsg && msg==false ?<div class="alert alert-danger w-75 m-auto text-center" role="alert">
+                                            {errmsg && msg===false ?<div class="alert alert-danger w-75 m-auto text-center" role="alert">
                                                 Please fill all feilds.
                                             </div>:""}
                                         </div>

@@ -21,7 +21,7 @@ export const Medicines = ()=>{
                         MedicinesData.map((item)=>{
                             return(
                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-">
-                                    <div className="med-card ">
+                                    <div className="med-card">
                                         <h1>{item.name}</h1>
                                         <div className="underline"></div>
                                         <div className="available"><span className="font-weight-bold">Status :</span> Available in{item.availableIn}</div>
