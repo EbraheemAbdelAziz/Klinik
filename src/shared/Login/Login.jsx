@@ -11,7 +11,8 @@ export default function Login(props) {
     const navegate = useNavigate()
     const [errMsg , setErrMsg ]=useState(false);
 
-    const signIn=()=>{
+    const signIn=(e)=>{
+        e.preventDefault();
         if(username==="doctor@gmail.com"&& password==="123456"){
             navegate("/doctorinfo")
         }

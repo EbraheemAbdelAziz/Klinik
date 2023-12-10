@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../../img/logo/logo.png";
 
-const NavBar = (props) => {
+const NavBar = () => {
   const location = useLocation()
   const { pathname} = location;
   return (
@@ -13,7 +13,7 @@ const NavBar = (props) => {
               <div class="container-fluid">
                 <div class="row align-items-center">
                   {/* <!-- Logo --> */}
-                  <div class="col-xl-2 col-lg-2 col-md-1">
+                  <div class="col-xl-2 col-lg-2 col-md-1">ٍ
                     <div class="logo">
                       <Link to={"/home"}>
                         <img src={logo} alt="logo" />

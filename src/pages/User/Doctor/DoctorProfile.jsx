@@ -147,7 +147,7 @@ export const DoctorProfile =()=>{
             <div className='writeComment mb-100'>
                 <h2>Tell us Your Feedback</h2>
                 <h5>Your Comment :</h5>
-                <textarea name="" id="patientComment" cols="60" rows="7"></textarea>
+                <textarea name="" id="patientComment" cols="60" rows="2"></textarea>
                 <button className='btn btn-info btncomment'>send </button>
 
             </div>
