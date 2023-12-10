@@ -4,7 +4,6 @@ import logo from "../../../../img/logo/logo.png";
 const NavBar = (props) => {
   const location = useLocation()
   const { pathname} = location;
-  console.log(pathname);
   return (
     <>
       {pathname === "/login" || pathname === "/register" || pathname === "/" ? ("") :(
