@@ -17,7 +17,7 @@ export const Footer = ()=>{
                             <div class="single-footer-caption mb-50">
                                 {/* <!-- logo --> */}
                                 <div class="footer-logo">
-                                    <Link to={"/"}><img src={Logo} alt=""/></Link>
+                                    <Link to={"/home"}><img src={Logo} alt=""/></Link>
                                 </div>
                             </div>
                         </div>
