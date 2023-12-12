@@ -55,7 +55,7 @@ export const DoctorsData = [
     name: "Eliana Everett",
     departmentId: 3,
     departmentName: "ENT Spitialists",
-    rate: 2.8,
+    rate: 5,
     img: doctorImg5,
   },
   {

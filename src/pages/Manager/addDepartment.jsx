@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 export default function AddDepartment() {
     const [department , setDepartment ] = useState({
         name :"",
-        numOfDoctors:'',    
+        numOfDoctors:'',
     });
     const [msg,setMsg]=useState(false);
     const [errmsg,setErrmsg]=useState(false);
     const addDepartment = (e) => {
-        if(department.name != "" && department.numOfDoctors != ""){
+        if(department.name !== "" && department.numOfDoctors !== ""){
             setMsg(true);
             setErrmsg(false);
         }else{
@@ -18,16 +18,16 @@ export default function AddDepartment() {
             setErrmsg(true);
         }
     };
-    return ( 
+    return (
     <>
         <div class="">
             <div class="containerAddpage">
                 <div class="text-center my-5">
                     <h2 > Add New Department</h2>
-                    {msg && errmsg==false ?<div class="alert alert-success w-50 m-auto " role="alert">
-                        Department Added Succesffully 
+                    {msg && errmsg===false ?<div class="alert alert-success w-50 m-auto " role="alert">
+                        Department Added Succesffully
                     </div>:""}
-                    {errmsg && msg==false ?<div class="alert alert-danger w-50 m-auto " role="alert">
+                    {errmsg && msg===false ?<div class="alert alert-danger w-50 m-auto " role="alert">
                         Please fill all feilds
                     </div>:""}
                     <div class=" mt-5">
