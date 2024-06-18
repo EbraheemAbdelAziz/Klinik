@@ -34,10 +34,6 @@ export const Footer = ()=>{
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
                             <div class="single-footer-caption mb-50">
-                                <div class="footer-number mb-50">
-                                    <h4><span>+564 </span>7885 3222</h4>
-                                    <p>youremail@gmail.com</p>
-                                </div>
                                 {/* <!-- Form --> */}
                                 <div class="footer-form">
                                     <div id="mc_embed_signup">
