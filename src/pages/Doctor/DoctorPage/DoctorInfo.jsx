@@ -73,7 +73,7 @@ export default function DoctorInfo() {
         {/* comments  */}
          <div className='comments mb-5'>
           <h2>
-          Patients's Comments (Your Feedback):
+          Patients's Comments Your Feedback:
           </h2>
               {
                 CommentsData.map((comment)=>{
